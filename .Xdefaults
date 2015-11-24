@@ -1,62 +1,97 @@
-*background:  #333333
-*foreground:  #efefcf
-!Colors
-! Black
-*color0:      #5A5A5A
-*color8:      #3e3e3e
-! Red
-*color1:      #FF4747
-*color9:      #FF6767
-! Green
-*color2:      #AFC81C
-*color10:     #bFC81C
-! Yellow
-*color3:      #FDD338
-*color11:     #F4D461
-! Blue
-*color4:      #619AF4
-*color12:     #5496FF
-! Purple
-*color5:      #5F5A90
-*color13:     #826AB1
-! Cyan
-*color6:      #47E0FF
-*color14:     #2ED9FB
-! White
-*color7:      #FFFFFF
-*color15:     #DEDEDE
+! xscreensaver ---------------------------------------------------------------
 
-!Xft settings
-Xft.dpi:                96
-Xft.hinting:            1
-Xft.hintstyle:          hintfull
-Xft.antialias:          1 
-Xft.rgba:               rgb
+!font settings
+xscreensaver.Dialog.headingFont:        -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #101010
+xscreensaver.Dialog.background:         #D8D8D8
+xscreensaver.Dialog.topShadowColor:     #D8D8D8
+xscreensaver.Dialog.bottomShadowColor:  #D8D8D8
+xscreensaver.Dialog.Button.foreground:  #101010
+xscreensaver.Dialog.Button.background:  #E5E5E5
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #101010
+xscreensaver.Dialog.text.background:    #E5E5E5
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        20
+xscreensaver.Dialog.shadowThickness:    2
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #101010
+xscreensaver.passwd.thermometer.background:  #2E2E2E
+xscreensaver.passwd.thermometer.width:       8
 
+Xcursor.theme: Black-DMZ
+Xcursor.size:  16
 
-!URxvt settings
-URxvt.urlLauncher:      firefox
-urxvt*font:         xft:Bitstream Vera Sans Mono:pixelsize=9
-URxvt*boldFont:     xft:Bitstream Vera Sans Mono:pixelsize=9
-URxvt*italicFont:   xft:segoe ui:pixelsize=9
-URxvt*bolditalicFont:   xft:Bitstream Vera Sans Mono:pixelsize=9
-URxvt*scrollBar:    false
-URxvt*internalBorder:   6
+/* Couleurs Tango */
+URxvt.foreground: #C8C8C8
+URxvt.background: #323232
+URxvt.color0:     #2E3436
+URxvt.color1:     #CC0000
+URxvt.color2:     #4E9A06
+URxvt.color3:     #C4A000
+URxvt.color4:     #3465A4
+URxvt.color5:     #75507B
+URxvt.color6:     #06989A
+URxvt.color7:     #D3D7CF
+URxvt.color8:     #555753
+URxvt.color9:     #EF2929
+URxvt.color10:    #8AE234
+URxvt.color11:    #FCE94F
+URxvt.color12:    #729FCF
+URxvt.color13:    #AD7FA8
+URxvt.color14:    #34E2E2
+URxvt.color15:    #EEEEEC
 
-!xterm settings
-xterm*dynamicColors:    true
-!xterm*utf8:             2
-xterm*eightBitInput:    true
-xterm*saveLines:        32767
-xterm*scrollTtyKeypress:true
-xterm*scrollTtyOutput:  false
-xterm*scrollBar:        false
-xterm*loginShell:       true
-xterm*faceName:         Bitstream Vera Sans Mono:pixelsize=10
-xterm*jumpScroll:       true
-xterm*multiScroll:      true
-xterm*toolBar:          false
+URxvt.transparent: true
+URxvt.shading:     10
+URxvt.fading:      40
+URxvt.font:        xft:Mono:pixelsize=11
 
+URxvt.scrollBar:         false
+URxvt.scrollTtyOutput:   false
+URxvt.scrollWithBuffer:  true
+URxvt.scrollTtyKeypress: true
 
-Xcursor.theme: Shere_Khan_Black_Hand
-Xcursor.size: 12
+*foreground:                          #ededf7
+*background:                          #252627
+
+!! black dark/light
+*color0: #332d29
+*color8: #817267
+
+!! red dark/light
+*color1: #9a7474
+*color9: #ea8484
+! *color9: #907f71
+
+!! green dark/light
+*color2: #afbf83
+*color10: #b8c596
+
+!! yellow dark/light
+*color3: #efaf63
+*color11: #e0b37d
+
+!! blue dark/light
+*color4: #64657b
+*color12: #74758d
+
+!! magenta dark/light
+*color5: #7d6b5d
+*color13: #c5b3a6
+
+!! cyan dark/light
+*color6: #75715e
+*color14: #82827d
+
+!! white dark/light
+*color7: #f9cda2
+*color15: #fff0d9
+
