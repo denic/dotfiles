@@ -118,14 +118,7 @@ hc pad $monitor $panel_height
         echo -n "^bg()^fg() ${windowtitle//^/^^}"
         
         # small adjustments
-        battery=$(expr $(cat /sys/class/power_supply/BAT1/capacity))
-
         right="$separator^bg() $date $separator"
-
-        if [ "$battery" != "/" ] ;then
-            right="$right $battery% $separator ^fg(#151515)"
-        fi
-        
         right_text_only=$(echo -n "$right" | sed 's.\^[^(]*([^)]*)..g')
 
         # get width of right aligned text.. and add some space..

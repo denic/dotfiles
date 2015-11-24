@@ -86,7 +86,7 @@ hc keybind $Mod-r remove
 hc keybind $Mod-space cycle_layout 1
 hc keybind $Mod-s floating toggle
 hc keybind $Mod-f fullscreen toggle
-hc keybind $Mod-p pseudotile toggle
+# hc keybind $Mod-p pseudotile toggle
 
 # mouse
 hc mouseunbind --all
@@ -154,6 +154,10 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 # or simply:
 # hc detect_monitors
 
+herbstclient set_monitors 1920x1200+1920+0 1920x1200+0+0 1920x1080+3840+0
+xrandr --output DVI-0 --auto --output DisplayPort-0 --left-of DVI-0 --mode 1920x1200 --output VGA1  --mode 1920x1080 --right-of DVI-0
+herbstclient set_monitors 1920x1200+1920+0 1920x1200+0+0 1920x1080+3840+0
+
 # find the panel
 panel=~/.config/herbstluftwm/panel.sh
 [ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
@@ -167,3 +171,5 @@ hc keybind $Mod-p spawn dmenu_run  -fn -*-terminus-medium-*-*-*-12-*-*-*-*-*-* -
 
 # Lock screen
 hc keybind Mod4-l spawn xscreensaver-command --lock
+
+nitrogen --restore &
