@@ -36,6 +36,7 @@ Xcursor.size:  16
 ! Source: https://github.com/morhetz/gruvbox-generalized
 ! Last Modified: 13 Dec 2013
 ! -----------------------------------------------------------------------------
+URxvt.termName: rxvt-256color
 
 URxvt.color24:  #076678
 URxvt.color66:  #427b58
@@ -68,10 +69,23 @@ URxvt.color246: #a89984
 URxvt.color248: #bdae93
 URxvt.color250: #d5c4a1
 
-URxvt.transparent: true
-URxvt.shading:     10
+URxvt.transparent: true 
+URxvt.shading:     10 
 URxvt.fading:      40
-URxvt.font:        xft:Mono:pixelsize=11
+
+! Bitstream Vera Sans Mono
+URxvt.font:\
+    xft:Bitstream Vera Sans Mono:style=Roman:size=8:antialias=true,\
+    xft:Osaka:style=Regular-Mono
+URxvt.boldFont:\
+    xft:Bitstream Vera Sans Mono:style=Bold,\
+    xft:Osaka:style=Regular-Mono
+URxvt.italicFont:\
+    xft:Bitstream Vera Sans Mono:style=Oblique,\
+    xft:Osaka:style=Regular-Mono
+URxvt.boldItalicFont:\
+    xft:Bitstream Vera Sans Mono:style=Bold Oblique,\
+    xft:Osaka:style=Regular-Mono
 
 URxvt.scrollBar:         false
 URxvt.scrollTtyOutput:   false
