@@ -17,6 +17,52 @@ bgcolor=$(hc get frame_border_normal_color)
 selbg=$(hc get window_border_active_color)
 selfg='#101010'
 
+#======~===~==============~===========~==
+# COLORS
+#==~==========~=========~=============~~=
+
+# get xresource colors
+# read xresource colors to array "xrdb"
+xrdb=( $(xrdb -query | grep -P "color[0-9]*:" | sort | cut -f 2-) )
+
+# `sort` doesn't quite sort ascending, it sorts "0, 10, 11, 12, ..., 1, 2, 3, ...", so we need to fix.
+# while we're at it, we might as well use proper names.
+
+# define array "color" (actually a hash table)
+declare -A color
+
+# need this to get the values from xrdb one by one
+index=0
+
+# loop over color names
+for name in black brightgreen brightyellow brightblue brightmagenta brightcyan brightwhite red green yellow blue magenta cyan white grey brightred; do
+	# assign color value from array xrdb to hash "color"
+	color[${name}]=${xrdb[$index]}
+	# increase "index" by one, so we get the next color value for the next iteration
+	((index++))
+done
+
+#======~===~==============~===========~==
+# ICONS
+#==~==========~=========~=============~~=
+iconpath=~/.config/herbstluftwm/icons
+function icon() {
+	echo -n "^fg(#000000)^ro(1x$height)^fg()^bg(${color[${2}]})^fg(#151515) ^i(${iconpath}/${1}.xbm) ^fg(#000000)^ro(1x$height)^fg()^bg()"
+}
+
+#======~===~==============~===========~==
+# Volume
+#==~==========~=========~=============~~=
+function volume() {
+    state=$(pulseaudio-ctl | grep "sink muted" | cut -c 39-41)
+    if [ $(echo $state) == "yes" ]; then
+        vol_percent="Muted"
+    else
+        vol_percent=$(pulseaudio-ctl | grep "Volume level" | cut -c 39-41)
+    fi
+    echo -n "$(icon spkr_01 magenta) ${vol_percent}"
+}
+
 ####
 # Try to find textwidth binary.
 # In e.g. Ubuntu, this is named dzen2-textwidth.
@@ -118,9 +164,15 @@ hc pad $monitor $panel_height
         echo -n "^bg()^fg() ${windowtitle//^/^^}"
         
         # small adjustments
+		right=""
+
+		for func in volume; do
+			right="${right} $(${func})"
+		done
+
         battery=$(expr $(cat /sys/class/power_supply/BAT1/capacity))
 
-        right="$separator^bg() $date $separator"
+        right="$right $separator^bg() $date $separator"
 
         if [ "$battery" != "/" ] ;then
             right="$right $battery% $separator ^fg(#151515)"
