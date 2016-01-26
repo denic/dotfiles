@@ -16,8 +16,8 @@ hc keyunbind --all
 
 # keybindings
 # if you have a super key you will be much happier with Mod set to Mod4
-# Mod=Mod1    # Use alt as the main modifier
-Mod=Mod4   # Use the super key as the main modifier
+Mod=Mod1    # Use alt as the main modifier
+# Mod=Mod4   # Use the super key as the main modifier
 
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
@@ -170,6 +170,7 @@ done
 hc keybind $Mod-p spawn dmenu_run  -fn -*-terminus-medium-*-*-*-12-*-*-*-*-*-* -nb rgb:00/00/00 -nf rgb:CC/CC/CC -sb rgb:CC/CC/CC -sf rgb:33/33/33
 
 # Lock screen
+# hc keybind Ctrl-Alt-l spawn xscreensaver-command --lock
 hc keybind Mod4-l spawn xscreensaver-command --lock
 
 nitrogen --restore &
