@@ -154,9 +154,9 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 # or simply:
 # hc detect_monitors
 
-herbstclient set_monitors 1920x1200+1920+0 1920x1200+0+0 1920x1080+3840+0
-xrandr --output DVI-0 --auto --output DisplayPort-0 --left-of DVI-0 --mode 1920x1200 --output VGA1  --mode 1920x1080 --right-of DVI-0
-herbstclient set_monitors 1920x1200+1920+0 1920x1200+0+0 1920x1080+3840+0
+# herbstclient set_monitors 1920x1200+1920+0 1920x1200+0+0 1920x1080+3840+0
+# xrandr --output DVI-0 --auto --output DisplayPort-0 --left-of DVI-0 --mode 1920x1200 --output VGA1  --mode 1920x1080 --right-of DVI-0
+# herbstclient set_monitors 1920x1200+1920+0 1920x1200+0+0 1920x1080+3840+0
 
 # find the panel
 panel=~/.config/herbstluftwm/panel.sh
