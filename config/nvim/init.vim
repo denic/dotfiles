@@ -1,14 +1,14 @@
 " ########## PLUGINS #####################
 call plug#begin('~/.vim/plugged')
 
-" HAProxy
+" --- HAProxy ---
 Plug 'sclo/haproxy.vim'
 
-" Elixir-Lang
+" --- Elixir-Lang ---
 Plug 'elixir-lang/vim-elixir'
 Plug 'carlosgaldino/elixir-snippets'
 
-" Snippets
+" --- Snippets ---
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'honza/vim-snippets'
 Plug 'jordwalke/VimJSDocSnippets'
@@ -20,12 +20,12 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
 Plug 'majutsushi/tagbar'
 
-" git integration
+" --- git integration ---
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" Colorschemes
+" --- Colorschemes ---
 Plug 'altercation/vim-colors-solarized'
 Plug 'chriskempson/base16-vim'
 Plug 'morhetz/gruvbox'
@@ -38,7 +38,7 @@ Plug 'vim-scripts/Relaxed-Green'
 Plug 'vim-scripts/blackdust.vim'
 Plug 'vim-scripts/summerfruit256.vim'
 
-Plug 'Townk/vim-autoclose'
+" Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-surround'
 Plug 'valloric/MatchTagAlways'
 Plug 'tpope/vim-commentary'
@@ -79,6 +79,9 @@ set nowrap
 let g:tern_map_keys=1
 
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
+
+" LOCAL-VIM-RC: Store and restore decisions only if the answer was given in upper case (Y/N/A).
+let g:localvimrc_persistent=1
 
 " ########## MAPPINGS #################
 
@@ -122,12 +125,5 @@ nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 
 nnoremap <leader>. :CtrlPTag<cr>
 
-" LOCAL-VIM-RC: Store and restore decisions only if the answer was given in upper case (Y/N/A).
-let g:localvimrc_persistent=1
-
-nnoremap <C-S-tab> :tabprevious<CR>
-nnoremap <C-tab>   :bnext<CR>
-nnoremap <C-t>     :tabnew<CR>
-inoremap <C-S-tab> <Esc>:tabprevious<CR>i
-inoremap <C-tab>   <Esc>:tabnext<CR>i
-inoremap <C-t>     <Esc>:tabnew<CR>
+" TagBar
+nmap <F8> :TagbarToggle<CR>
