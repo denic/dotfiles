@@ -51,6 +51,9 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bling/vim-bufferline'
 Plug 'ihacklog/HiCursorWords'
 
+" insert mode auto-completion for quotes, parens, brackets, etc.
+Plug 'Raimondi/delimitMate'
+
 " Add plugins to &runtimepath
 call plug#end()
 
