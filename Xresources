@@ -73,18 +73,18 @@ URxvt.transparent: true
 URxvt.shading:     10 
 URxvt.fading:      40
 
-! Bitstream Vera Sans Mono
+! Monospace
 URxvt.font:\
-    xft:Bitstream Vera Sans Mono:style=Roman:size=8:antialias=true,\
+    xft:Monospace:style=Roman:size=9:antialias=true,\
     xft:Osaka:style=Regular-Mono
 URxvt.boldFont:\
-    xft:Bitstream Vera Sans Mono:style=Bold,\
+    xft:Monospace:style=Bold,\
     xft:Osaka:style=Regular-Mono
 URxvt.italicFont:\
-    xft:Bitstream Vera Sans Mono:style=Oblique,\
+    xft:Monospace:style=Oblique,\
     xft:Osaka:style=Regular-Mono
 URxvt.boldItalicFont:\
-    xft:Bitstream Vera Sans Mono:style=Bold Oblique,\
+    xft:Monospace:style=Bold Oblique,\
     xft:Osaka:style=Regular-Mono
 
 URxvt.scrollBar:         false
