@@ -86,6 +86,9 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 " LOCAL-VIM-RC: Store and restore decisions only if the answer was given in upper case (Y/N/A).
 let g:localvimrc_persistent=1
 
+" ########## SYNTASTIC ################
+let g:syntastic_javascript_checkers = ['eslint']
+
 " ########## MAPPINGS #################
 
 " Configure YouCompleteMe.
