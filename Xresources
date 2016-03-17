@@ -75,7 +75,7 @@ URxvt.fading:      40
 
 ! Monospace
 URxvt.font:\
-    xft:Monospace:style=Roman:size=9:antialias=true,\
+    xft:Monospace:style=Roman:size=8:antialias=true,\
     xft:Osaka:style=Regular-Mono
 URxvt.boldFont:\
     xft:Monospace:style=Bold,\
