@@ -88,6 +88,7 @@ let g:localvimrc_persistent=1
 
 " ########## SYNTASTIC ################
 let g:syntastic_javascript_checkers = ['eslint']
+nnoremap <silent> <C-e> :Errors<CR>
 
 " ########## MAPPINGS #################
 
