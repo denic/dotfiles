@@ -167,3 +167,7 @@ hc keybind $Mod-p spawn dmenu_run  -fn -*-terminus-medium-*-*-*-12-*-*-*-*-*-* -
 
 # Lock screen
 hc keybind Mod4-l spawn xscreensaver-command --lock
+
+# run dunst with theme colours
+pkill dunst
+dunst
