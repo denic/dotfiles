@@ -73,24 +73,32 @@ URxvt.transparent: true
 URxvt.shading:     10 
 URxvt.fading:      40
 
-! Monospace
-URxvt.font:\
-    xft:Monospace:style=Roman:size=8:antialias=true,\
-    xft:Osaka:style=Regular-Mono
-URxvt.boldFont:\
-    xft:Monospace:style=Bold,\
-    xft:Osaka:style=Regular-Mono
-URxvt.italicFont:\
-    xft:Monospace:style=Oblique,\
-    xft:Osaka:style=Regular-Mono
-URxvt.boldItalicFont:\
-    xft:Monospace:style=Bold Oblique,\
-    xft:Osaka:style=Regular-Mono
+! FONTS
+
+URxvt.font:-*-bitocra13-medium-*-*-*-*-*-*-*-*-*-*-*
+URxvt.boldFont:-*-bitocra13-bold-*-*-*-*-*-*-*-*-*-*-*
+
+!URxvt.font:\
+!    xft:Monospace:style=Roman:size=8:antialias=true,\
+!    xft:Osaka:style=Regular-Mono
+!URxvt.boldFont:\
+!    xft:Monospace:style=Bold,\
+!    xft:Osaka:style=Regular-Mono
+!URxvt.italicFont:\
+!    xft:Monospace:style=Oblique,\
+!    xft:Osaka:style=Regular-Mono
+!URxvt.boldItalicFont:\
+!    xft:Monospace:style=Bold Oblique,\
+!    xft:Osaka:style=Regular-Mono
 
 URxvt.scrollBar:         false
 URxvt.scrollTtyOutput:   false
 URxvt.scrollWithBuffer:  true
 URxvt.scrollTtyKeypress: true
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
 
 ! -----------------------------------------------------------------------------
 ! File: gruvbox-dark.xresources
