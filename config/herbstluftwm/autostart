@@ -172,6 +172,9 @@ hc keybind Mod4-l spawn xscreensaver-command --lock
 hc keybind Mod4-n spawn mpc next
 hc keybind Mod4-p spawn mpc toggle 
 
+# Pulseaudio control
+hc keybind Mod4-m spawn pulseaudio-ctl mute
+
 # run dunst with theme colours
 pkill dunst
 dunst
