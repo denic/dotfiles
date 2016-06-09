@@ -7,6 +7,7 @@ Plug 'sclo/haproxy.vim'
 " --- Elixir-Lang ---
 Plug 'elixir-lang/vim-elixir'
 Plug 'carlosgaldino/elixir-snippets'
+Plug 'slashmili/alchemist.vim'
 
 " --- Snippets ---
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
