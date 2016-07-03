@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# target: ~/.xsessionrc
+
+# xmodmap ~/scripts/speedswapper.xmodmap
+
+xset +fp ~/.fonts/bitocra
+xset fp rehash
+
+
+xrdb -load .Xresources
+
+redshift &
+
+# xscreensaver
+xscreensaver -no-splash &
