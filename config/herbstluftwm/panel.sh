@@ -16,7 +16,8 @@ y=${geometry[1]}
 panel_width=${geometry[2]}
 panel_height=16
 # font="-*-fixed-medium-*-*-*-12-*-*-*-*-*-*-*"
-font="-*-bitocra-medium-*-*-*-10-*-*-*-*-*-*-*"
+# font="-*-bitocra-medium-*-*-*-10-*-*-*-*-*-*-*"
+font="-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*"
 bgcolor=$(hc get frame_border_normal_color)
 selbg=$(hc get window_border_active_color)
 selfg='#101010'
@@ -174,7 +175,11 @@ hc pad $monitor $panel_height
 			right="${right} $(${func})"
 		done
 
-        battery=$(expr $(cat /sys/class/power_supply/BAT1/capacity))
+        if [ -e /sys/class/power_supply/BAT0/capacity ] ; then
+            battery=$(expr $(cat /sys/class/power_supply/BAT0/capacity))
+        else
+            battery=$(expr $(cat /sys/class/power_supply/BAT1/capacity))
+        fi
 
         right="$right $separator^bg() $date $separator"
 
