@@ -75,8 +75,14 @@ URxvt.fading:      40
 
 ! FONTS
 
-URxvt.font:-*-bitocra13-medium-*-*-*-*-*-*-*-*-*-*-*
-URxvt.boldFont:-*-bitocra13-bold-*-*-*-*-*-*-*-*-*-*-*
+!URxvt.font:-*-bitocra13-medium-*-*-*-*-*-*-*-*-*-*-*
+!URxvt.boldFont:-*-bitocra13-bold-*-*-*-*-*-*-*-*-*-*-*
+
+Urxvt.font:-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
+Urxvt.boldFont:-*-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
+
+!Urxvt.font: xft:Terminus
+!Urxvt.boldFont: xft:Terminus
 
 !URxvt.font:\
 !    xft:Monospace:style=Roman:size=8:antialias=true,\
