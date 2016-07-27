@@ -102,9 +102,14 @@ URxvt.scrollTtyOutput:   false
 URxvt.scrollWithBuffer:  true
 URxvt.scrollTtyKeypress: true
 
-URxvt.perl-ext-common: default,matcher
+URxvt.perl-ext-common: default,matcher,font-size
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
+
+! Changing the font size on the fly
+! <http://github.com/majutsushi/urxvt-font-size>
+URxvt.keysym.C-plus: font-size:increase
+URxvt.keysym.C-underscore: font-size:decrease
 
 ! -----------------------------------------------------------------------------
 ! File: gruvbox-dark.xresources
