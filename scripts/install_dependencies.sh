@@ -28,3 +28,11 @@ pushd /tmp
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install nodejs
 popd
+
+# Fetch misc scripts and stuff
+mkdir -p ~/src/misc/
+pushd ~/src/misc/
+
+git clone git@github.com:bjhaid/elixir_auto_complete.git
+
+popd
