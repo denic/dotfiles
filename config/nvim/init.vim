@@ -13,6 +13,7 @@ Plug 'slashmili/alchemist.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'jordwalke/VimJSDocSnippets'
+Plug 'chrisgillis/vim-bootstrap3-snippets'
 
 " JS
 Plug 'pangloss/vim-javascript'
