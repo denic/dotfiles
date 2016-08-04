@@ -103,7 +103,11 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 if [ -f ~/src/misc/elixir_auto_complete/all_elixir_auto_complete.bash ]; then
-    . ~/src/misc/elixir_auto_complete/all_elixir_auto_complete.bash
+    source ~/src/misc/elixir_auto_complete/all_elixir_auto_complete.bash
+fi
+
+if [ -f ~/src/misc/dotfiles/lib/git-flow-completion/git-flow-completion.bash ]; then
+    source ~/src/misc/dotfiles/lib/git-flow-completion/git-flow-completion.bash
 fi
 
 # enable programmable completion features (you don't need to enable
