@@ -54,6 +54,7 @@ Plug 'bling/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bling/vim-bufferline'
 Plug 'ihacklog/HiCursorWords'
+Plug 'tmhedberg/matchit'
 
 " insert mode auto-completion for quotes, parens, brackets, etc.
 Plug 'Raimondi/delimitMate'
