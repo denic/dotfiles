@@ -140,6 +140,9 @@ nnoremap <silent> <Leader>, :CtrlPFunky<Cr>
 nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 
 nnoremap <leader>. :CtrlPTag<cr>
+nnoremap <leader>m :CtrlPMixed<cr>
+
+let g:ctrlp_funky_syntax_highlight = 1
 
 " TagBar
 nmap <F8> :TagbarToggle<CR>
