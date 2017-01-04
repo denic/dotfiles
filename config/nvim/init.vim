@@ -97,6 +97,7 @@ let g:localvimrc_persistent=1
 
 " ########## SYNTASTIC ################
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_php_phpcs_args='--standard=PSR2 -n'
 nnoremap <silent> <C-e> :Errors<CR>
 
 " ########## MAPPINGS #################
