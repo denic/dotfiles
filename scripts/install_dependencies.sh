@@ -27,6 +27,8 @@ popd
 pushd /tmp
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install nodejs
+
+sudo npm i -g eslint eslint-plugin-vue
 popd
 
 # Fetch misc scripts and stuff

@@ -23,6 +23,7 @@ Plug 'jelera/vim-javascript-syntax'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
 Plug 'majutsushi/tagbar'
+Plug 'posva/vim-vue'
 
 " --- git integration ---
 Plug 'tpope/vim-fugitive'
@@ -87,6 +88,8 @@ set shiftwidth=4
 set tabstop=4
 set expandtab
 set nowrap
+
+autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
 
 let g:tern_map_keys=1
 
@@ -190,7 +193,7 @@ augroup elixir
 
     let g:neomake_elixir_lint_maker = {
                 \ 'exe': 'mix',
-                \ 'args': ['credo', 'list', '%:p', '--one-line', '-i', 'readability'],
+                \ 'args': ['credo', 'list', '%:p', '--format=oneline', '-i', 'readability'],
                 \ 'errorformat': '[%t] %. %f:%l:%c %m'
                 \ }
 
