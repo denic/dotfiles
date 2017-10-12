@@ -137,3 +137,13 @@ transfer() {
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+export PATH=${PATH}:~/Android/Sdk/platform-tools:~/Android/Sdk/tools
+
+export ANDROID_HOME=~/Android/Sdk/
+
+# Composer bins
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+export http_proxy=''
+export https_proxy=''
+export ftp_proxy=''
+export socks_proxy=''
