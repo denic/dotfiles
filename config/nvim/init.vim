@@ -11,6 +11,9 @@ Plug 'slashmili/alchemist.vim'
 Plug 'thinca/vim-ref'
 " Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
 
+" --- Elm ---
+Plug 'elmcast/elm-vim'
+
 " --- Snippets ---
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -101,6 +104,11 @@ let g:localvimrc_persistent=1
 " ########## SYNTASTIC ################
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_php_phpcs_args='--standard=PSR2 -n'
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+
+let g:elm_syntastic_show_warnings = 1
 nnoremap <silent> <C-e> :Errors<CR>
 
 " ########## MAPPINGS #################
@@ -109,6 +117,9 @@ nnoremap <silent> <C-e> :Errors<CR>
 " let g:ycm_add_preview_to_completeopt=0
 " let g:ycm_confirm_extra_conf=0
 " set completeopt-=preview
+let g:ycm_semantic_triggers = {
+     \ 'elm' : ['.'],
+     \}
 
 " Configure Ultisnips.
 let g:UltiSnipsExpandTrigger="<c-j>"
@@ -220,7 +231,8 @@ augroup elixir
         \ 'o:operators',
         \ 'm:modules',
         \ 'p:protocols',
-        \ 'r:records'
+        \ 'r:records',
+        \ 't:tests'
     \ ]
     \ }
 
