@@ -92,7 +92,18 @@ set tabstop=4
 set expandtab
 set nowrap
 
-autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
+augroup javascript
+    autocmd!
+    autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
+    autocmd! BufWritePost,BufEnter *.js Neomake
+
+    let g:neomake_javascript_jscs_maker = {
+                \ 'exe': 'jscs',
+                \ 'args': ['--no-color', '--preset', 'airbnb', '--reporter', 'inline', '--esnext'],
+                \ 'errorformat': '%f: line %l\, col %c\, %m',
+                \ }
+    let g:neomake_javascript_enabled_makers = ['jscs']
+augroup END
 
 let g:tern_map_keys=1
 
