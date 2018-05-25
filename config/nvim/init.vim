@@ -1,4 +1,7 @@
-" ########## PLUGINS #####################
+" ---------------
+" --- Plugins --- 
+" ---------------
+
 call plug#begin('~/.vim/plugged')
 
 " --- HAProxy ---
@@ -20,13 +23,18 @@ Plug 'honza/vim-snippets'
 Plug 'jordwalke/VimJSDocSnippets'
 Plug 'chrisgillis/vim-bootstrap3-snippets'
 
-" JS
+" --- JavaScript ---
 Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
 Plug 'majutsushi/tagbar'
+
 Plug 'posva/vim-vue'
+
+Plug 'mxw/vim-jsx'
+Plug 'justinj/vim-react-snippets'
+Plug 'cristianoliveira/vim-react-html-snippets'
 
 " --- git integration ---
 Plug 'tpope/vim-fugitive'
@@ -63,14 +71,16 @@ Plug 'tmhedberg/matchit'
 " insert mode auto-completion for quotes, parens, brackets, etc.
 Plug 'Raimondi/delimitMate'
 
-" MISC
+" --- MISC ---
 Plug 'triglav/vim-visual-increment'
 Plug 'neomake/neomake'
 
 " Add plugins to &runtimepath
 call plug#end()
 
-" ########## MISC #####################
+" ------------
+" --- MISC --- 
+" ------------
 
 let g:airline_powerline_fonts = 1
 
@@ -92,6 +102,18 @@ set tabstop=4
 set expandtab
 set nowrap
 
+" LOCAL-VIM-RC: Store and restore decisions only if the answer was given in upper case (Y/N/A).
+let g:localvimrc_persistent=1
+
+" ------------------
+" --- JavaScript ---
+" ------------------
+
+let g:jsx_ext_required = 0
+let g:tern_map_keys=1
+
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
+
 augroup javascript
     autocmd!
     autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
@@ -105,12 +127,6 @@ augroup javascript
     let g:neomake_javascript_enabled_makers = ['jscs']
 augroup END
 
-let g:tern_map_keys=1
-
-let g:UltiSnipsSnippetDirectories=["UltiSnips"]
-
-" LOCAL-VIM-RC: Store and restore decisions only if the answer was given in upper case (Y/N/A).
-let g:localvimrc_persistent=1
 
 " ########## SYNTASTIC ################
 let g:syntastic_javascript_checkers = ['eslint']
