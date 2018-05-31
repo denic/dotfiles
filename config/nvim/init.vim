@@ -24,14 +24,17 @@ Plug 'jordwalke/VimJSDocSnippets'
 Plug 'chrisgillis/vim-bootstrap3-snippets'
 
 " --- JavaScript ---
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+" Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
 Plug 'majutsushi/tagbar'
+Plug 'mhartington/nvim-typescript'
 
 Plug 'posva/vim-vue'
 
+" --- React ---
 Plug 'mxw/vim-jsx'
 Plug 'justinj/vim-react-snippets'
 Plug 'cristianoliveira/vim-react-html-snippets'
@@ -109,8 +112,10 @@ let g:localvimrc_persistent=1
 " --- JavaScript ---
 " ------------------
 
+let g:nvim_typescript#javascript_support = 1
+
 let g:jsx_ext_required = 0
-let g:tern_map_keys=1
+" let g:tern_map_keys=1
 
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
@@ -140,13 +145,16 @@ nnoremap <silent> <C-e> :Errors<CR>
 
 " ########## MAPPINGS #################
 
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+
 " Configure YouCompleteMe.
 " let g:ycm_add_preview_to_completeopt=0
 " let g:ycm_confirm_extra_conf=0
 " set completeopt-=preview
-let g:ycm_semantic_triggers = {
-     \ 'elm' : ['.'],
-     \}
+" let g:ycm_semantic_triggers = {
+"      \ 'elm' : ['.'],
+"      \}
 
 " Configure Ultisnips.
 let g:UltiSnipsExpandTrigger="<c-j>"
