@@ -30,7 +30,7 @@ Plug 'jelera/vim-javascript-syntax'
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
 Plug 'majutsushi/tagbar'
-Plug 'mhartington/nvim-typescript'
+Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
 
 Plug 'posva/vim-vue'
 
@@ -108,6 +108,9 @@ set nowrap
 " LOCAL-VIM-RC: Store and restore decisions only if the answer was given in upper case (Y/N/A).
 let g:localvimrc_persistent=1
 
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+
 " ------------------
 " --- JavaScript ---
 " ------------------
@@ -119,18 +122,18 @@ let g:jsx_ext_required = 0
 
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
-augroup javascript
-    autocmd!
-    autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
-    autocmd! BufWritePost,BufEnter *.js Neomake
+" augroup javascript
+"     autocmd!
+"     autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
+"     autocmd! BufWritePost,BufEnter *.js Neomake
 
-    let g:neomake_javascript_jscs_maker = {
-                \ 'exe': 'jscs',
-                \ 'args': ['--no-color', '--preset', 'airbnb', '--reporter', 'inline', '--esnext'],
-                \ 'errorformat': '%f: line %l\, col %c\, %m',
-                \ }
-    let g:neomake_javascript_enabled_makers = ['jscs']
-augroup END
+"     let g:neomake_javascript_jscs_maker = {
+"                 \ 'exe': 'jscs',
+"                 \ 'args': ['--no-color', '--preset', 'airbnb', '--reporter', 'inline', '--esnext'],
+"                 \ 'errorformat': '%f: line %l\, col %c\, %m',
+"                 \ }
+"     let g:neomake_javascript_enabled_makers = ['jscs']
+" augroup END
 
 
 " ########## SYNTASTIC ################
@@ -144,9 +147,6 @@ let g:elm_syntastic_show_warnings = 1
 nnoremap <silent> <C-e> :Errors<CR>
 
 " ########## MAPPINGS #################
-
-" Deoplete
-let g:deoplete#enable_at_startup = 1
 
 " Configure YouCompleteMe.
 " let g:ycm_add_preview_to_completeopt=0
