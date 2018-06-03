@@ -115,16 +115,15 @@ let g:deoplete#enable_at_startup = 1
 " --- JavaScript ---
 " ------------------
 
-let g:nvim_typescript#javascript_support = 1
+augroup javascript
+    autocmd!
 
-let g:jsx_ext_required = 0
-" let g:tern_map_keys=1
+    let g:nvim_typescript#javascript_support = 1
+    let g:jsx_ext_required = 0
+    let g:UltiSnipsSnippetDirectories=["UltiSnips"]
+    " let g:tern_map_keys=1
 
-let g:UltiSnipsSnippetDirectories=["UltiSnips"]
-
-" augroup javascript
-"     autocmd!
-"     autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
+    autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
 "     autocmd! BufWritePost,BufEnter *.js Neomake
 
 "     let g:neomake_javascript_jscs_maker = {
@@ -133,7 +132,7 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 "                 \ 'errorformat': '%f: line %l\, col %c\, %m',
 "                 \ }
 "     let g:neomake_javascript_enabled_makers = ['jscs']
-" augroup END
+augroup END
 
 
 " ########## SYNTASTIC ################
