@@ -25,7 +25,7 @@ popd
 # Install nodejs
 
 pushd /tmp
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install nodejs
 
 sudo npm i -g eslint eslint-plugin-vue
@@ -36,5 +36,6 @@ mkdir -p ~/src/misc/
 pushd ~/src/misc/
 
 git clone git@github.com:bjhaid/elixir_auto_complete.git
+git clone git@github.com:magicmonty/bash-git-prompt.git git-prompt
 
 popd
