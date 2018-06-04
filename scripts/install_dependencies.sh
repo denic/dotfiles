@@ -37,5 +37,6 @@ pushd ~/src/misc/
 
 git clone git@github.com:bjhaid/elixir_auto_complete.git
 git clone git@github.com:magicmonty/bash-git-prompt.git git-prompt
+git clone https://github.com/graysky2/pulseaudio-ctl.git
 
 popd
