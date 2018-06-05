@@ -3,7 +3,8 @@
 # Base setup
 sudo apt-get install build-essential arandr cmake dunst dzen2 exfat-utils \
     git herbstluftwm  meld nmap redshift rxvt-unicode-256color suckless-tools \
-    tig tmux xfonts-terminus profanity pwgen nitrogen
+    tig tmux xfonts-terminus profanity pwgen nitrogen \
+    help2man
 
 # Install neovim
 sudo apt-get install software-properties-common
@@ -38,5 +39,11 @@ pushd ~/src/misc/
 git clone git@github.com:bjhaid/elixir_auto_complete.git
 git clone git@github.com:magicmonty/bash-git-prompt.git git-prompt
 git clone https://github.com/graysky2/pulseaudio-ctl.git
+git clone git@github.com:haikarainen/light.git
 
+popd
+
+pushd ~/src/misc/light
+make
+sudo make install
 popd
