@@ -4,7 +4,7 @@
 sudo apt-get install build-essential arandr cmake dunst dzen2 exfat-utils \
     git herbstluftwm  meld nmap redshift rxvt-unicode-256color suckless-tools \
     tig tmux xfonts-terminus profanity pwgen nitrogen \
-    help2man
+    help2man xclip
 
 # Install neovim
 sudo apt-get install software-properties-common
