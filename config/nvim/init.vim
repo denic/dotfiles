@@ -56,6 +56,8 @@ Plug 'sickill/vim-monokai'
 Plug 'vim-scripts/Relaxed-Green'
 Plug 'vim-scripts/blackdust.vim'
 Plug 'vim-scripts/summerfruit256.vim'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'google/vim-colorscheme-primary'
 
 " Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-surround'
@@ -65,7 +67,8 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/syntastic'
 Plug 'kien/ctrlp.vim'
 Plug 'tacahiroy/ctrlp-funky'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bling/vim-bufferline'
 Plug 'ihacklog/HiCursorWords'
@@ -94,6 +97,7 @@ set incsearch
 
 set background=dark
 colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'soft'
 
 " highlight current line
 set cursorline
@@ -117,6 +121,8 @@ let g:deoplete#enable_at_startup = 1
 
 augroup javascript
     autocmd!
+
+    nnoremap gd :TSDef<CR>
 
     let g:nvim_typescript#javascript_support = 1
     let g:jsx_ext_required = 0
@@ -330,3 +336,9 @@ augroup elixir
         return query
     endfunction
 augroup END
+
+if has('gui_running')
+  set guioptions-=T  " no toolbar
+  set lines=60 columns=108 linespace=0
+  set guifont=DejaVu\ Sans\ Mono\ 10
+endif
