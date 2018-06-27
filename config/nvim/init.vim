@@ -337,6 +337,11 @@ augroup elixir
     endfunction
 augroup END
 
+augroup XML
+    autocmd!
+    autocmd FileType xml setlocal foldmethod=indent foldlevelstart=999 foldminlines=0
+augroup END
+
 if has('gui_running')
   set guioptions-=T  " no toolbar
   set lines=60 columns=108 linespace=0
