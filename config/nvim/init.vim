@@ -70,7 +70,7 @@ Plug 'tacahiroy/ctrlp-funky'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'bling/vim-bufferline'
+" Plug 'bling/vim-bufferline'
 Plug 'ihacklog/HiCursorWords'
 Plug 'tmhedberg/matchit'
 
