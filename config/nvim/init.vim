@@ -28,7 +28,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-" Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'majutsushi/tagbar'
 Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
 
@@ -65,7 +65,7 @@ Plug 'valloric/MatchTagAlways'
 Plug 'tpope/vim-commentary'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/syntastic'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tacahiroy/ctrlp-funky'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -80,6 +80,8 @@ Plug 'Raimondi/delimitMate'
 " --- MISC ---
 Plug 'triglav/vim-visual-increment'
 Plug 'neomake/neomake'
+Plug 'thinca/vim-localrc'
+Plug 'mklabs/mdn.vim'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -190,6 +192,10 @@ map <left> <c-w><
 map <right> <c-w>>
 
 
+" CtrlP Funky
+let g:ctrlp_funky_syntax_highlight = 1
+nnoremap <leader>f :CtrlPFunky<CR>
+
 " narrow the list down with a word under cursor
 nnoremap <silent> <Leader>, :CtrlPFunky<Cr>
 nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
@@ -197,7 +203,6 @@ nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 nnoremap <leader>. :CtrlPTag<cr>
 nnoremap <leader>m :CtrlPMixed<cr>
 
-let g:ctrlp_funky_syntax_highlight = 1
 
 " TagBar
 nmap <F8> :TagbarToggle<CR>
@@ -226,7 +231,6 @@ command FormatJSON :%!python -mjson.tool
 augroup elixir
     autocmd!
     let g:UltiSnipsJumpForwardTrigger='<tab>'
-    " autocmd FileType elixir setlocal tags+=/Users/hq1/dev/elixir/tags
 
     autocmd FileType eelixir setlocal textwidth=0
     autocmd FileType eelixir setlocal wrapmargin=0
