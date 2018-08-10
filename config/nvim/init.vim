@@ -70,7 +70,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'nathanaelkane/vim-indent-guides'
 " Plug 'bling/vim-bufferline'
-Plug 'ihacklog/HiCursorWords'
+Plug 'denic/HiCursorWords'
 Plug 'tmhedberg/matchit'
 
 " insert mode auto-completion for quotes, parens, brackets, etc.
@@ -81,6 +81,7 @@ Plug 'triglav/vim-visual-increment'
 Plug 'neomake/neomake'
 Plug 'thinca/vim-localrc'
 Plug 'mklabs/mdn.vim'
+Plug 'dkarter/bullets.vim'
 
 " Add plugins to &runtimepath
 call plug#end()
