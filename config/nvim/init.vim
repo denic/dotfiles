@@ -131,7 +131,7 @@ augroup javascript
     let g:UltiSnipsSnippetDirectories=["UltiSnips"]
     " let g:tern_map_keys=1
 
-    autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
+    autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab
 "     autocmd! BufWritePost,BufEnter *.js Neomake
 
 "     let g:neomake_javascript_jscs_maker = {
@@ -350,4 +350,6 @@ if has('gui_running')
   set guioptions-=T  " no toolbar
   set lines=60 columns=108 linespace=0
   set guifont=DejaVu\ Sans\ Mono\ 10
+else
+    set termguicolors
 endif
