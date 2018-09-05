@@ -57,6 +57,7 @@ Plug 'vim-scripts/summerfruit256.vim'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'nightsense/simplifysimplify'
 Plug 'nightsense/wonka'
+Plug 'rakr/vim-one'
 
 " Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-surround'
@@ -97,9 +98,9 @@ set rnu
 set hlsearch
 set incsearch
 
-set background=dark
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'soft'
+" set background=dark
+" colorscheme gruvbox
+" let g:gruvbox_contrast_dark = 'soft'
 
 " highlight current line
 set cursorline
@@ -351,5 +352,17 @@ if has('gui_running')
   set lines=60 columns=108 linespace=0
   set guifont=DejaVu\ Sans\ Mono\ 10
 else
-    set termguicolors
+    if &term =~ '256color'
+        " disable Background Color Erase (BCE) so that color schemes
+        " render properly when inside 256-color tmux and GNU screen.
+        " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+        set t_ut=
+    endif
+
+    let g:airline_theme='one'
+    set background=light        " for the light version
+    let g:one_allow_italics = 1 " I love italic for comments
+    colorscheme one
+
+    " set termguicolors
 endif
