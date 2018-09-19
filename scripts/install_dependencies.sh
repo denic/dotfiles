@@ -2,7 +2,7 @@
 
 # Base setup
 sudo apt-get install build-essential arandr cmake dunst dzen2 exfat-utils \
-    git herbstluftwm  meld nmap redshift rxvt-unicode-256color suckless-tools \
+    git herbstluftwm  meld nmap redshift rxvt-unicode-256color suckless-tools rofi \
     tig tmux xfonts-terminus fonts-powerline profanity pwgen nitrogen \
     python-pygments \
     help2man xclip
