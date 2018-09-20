@@ -170,7 +170,7 @@ done
 
 # Application launcher
 # hc keybind $Mod-p spawn dmenu_run  -fn -*-terminus-medium-*-*-*-12-*-*-*-*-*-* -nb rgb:00/00/00 -nf rgb:CC/CC/CC -sb rgb:CC/CC/CC -sf rgb:33/33/33
-hc keybind $Mod-p spawn rofi -location 2 -show run
+hc keybind $Mod-p spawn rofi -location 2 -show drun -theme gruvbox-dark-hard
 
 # Lock screen
 hc keybind Mod4-l spawn xscreensaver-command --lock
