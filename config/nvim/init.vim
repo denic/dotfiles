@@ -59,6 +59,7 @@ Plug 'nightsense/simplifysimplify'
 Plug 'nightsense/wonka'
 Plug 'rakr/vim-one'
 Plug 'skreek/skeletor.vim'
+Plug 'tjammer/blayu.vim'
 
 " Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-surround'
