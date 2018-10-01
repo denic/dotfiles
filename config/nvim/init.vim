@@ -361,10 +361,11 @@ else
         set t_ut=
     endif
 
-    let g:airline_theme='one'
-    set background=light        " for the light version
-    let g:one_allow_italics = 1 " I love italic for comments
-    colorscheme one
+    " let g:airline_theme='one'
+    " let g:one_allow_italics = 1 " I love italic for comments
+
+    set background=dark
+    colorscheme gruvbox
 
     " set termguicolors
 endif
