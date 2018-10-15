@@ -86,6 +86,8 @@ Plug 'thinca/vim-localrc'
 Plug 'mklabs/mdn.vim'
 Plug 'dkarter/bullets.vim'
 
+Plug 'IN3D/vim-raml'
+
 " Add plugins to &runtimepath
 call plug#end()
 
