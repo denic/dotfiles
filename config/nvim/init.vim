@@ -102,9 +102,6 @@ set rnu
 set hlsearch
 set incsearch
 
-" set background=dark
-" colorscheme gruvbox
-" let g:gruvbox_contrast_dark = 'soft'
 
 " highlight current line
 set cursorline
@@ -363,10 +360,11 @@ else
         set t_ut=
     endif
 
-    " let g:airline_theme='one'
     " let g:one_allow_italics = 1 " I love italic for comments
 
     set background=dark
+    let g:gruvbox_contrast_dark = 'soft'
+    let g:airline_theme='gruvbox'
     colorscheme gruvbox
 
     " set termguicolors
