@@ -29,8 +29,8 @@ xscreensaver.passwd.thermometer.width:       8
 Xcursor.theme: Black-DMZ
 Xcursor.size:  16
 
-URxvt.cursorBlink: 1
-URxvt.cursorUnderline: 1
+URxvt.cursorBlink: true
+/* URxvt.cursorUnderline: 1 */
 
 URxvt.termName: rxvt-256color
 URxvt.transparent: false 
