@@ -29,6 +29,9 @@ xscreensaver.passwd.thermometer.width:       8
 Xcursor.theme: Black-DMZ
 Xcursor.size:  16
 
+URxvt.cursorBlink: true
+/* URxvt.cursorUnderline: 1 */
+
 URxvt.termName: rxvt-256color
 URxvt.transparent: false 
 URxvt.shading:     10 
@@ -97,14 +100,14 @@ URxvt.fading:      40
 !Urxvt.font:-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
 !Urxvt.boldFont:-*-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
 
-URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
-URxvt*boldFont: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:bold:hinting=true
-URxvt*italicFont: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:italic:autohint=true:hinting=true
-URxvt*bolditalicFont: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:bold:italic:autohint=true:hinting=true
-xterm*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
-xterm*boldFont: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:bold:hinting=true
-xterm*italicFont: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:italic:autohint=true:hinting=true
-xterm*bolditalicFont: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:bold:italic:autohint=true:hinting=true
+URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:hinting=true
+URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:bold:hinting=true
+URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:italic:autohint=true:hinting=true
+URxvt*bolditalicFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:bold:italic:autohint=true:hinting=true
+xterm*font: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:hinting=true
+xterm*boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:bold:hinting=true
+xterm*italicFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:italic:autohint=true:hinting=true
+xterm*bolditalicFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:bold:italic:autohint=true:hinting=true
 
 !Urxvt.font: xft:Terminus
 !Urxvt.boldFont: xft:Terminus

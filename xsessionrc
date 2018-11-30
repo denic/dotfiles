@@ -13,4 +13,7 @@ xrdb -load .Xresources
 # redshift &
 
 # xscreensaver
-xscreensaver -no-splash &
+if [ "$XDG_CURRENT_DESKTOP" != "KDE" ];
+then 
+    xscreensaver -no-splash &
+fi
