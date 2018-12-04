@@ -20,7 +20,7 @@ Plug 'elmcast/elm-vim'
 " --- Snippets ---
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'jordwalke/VimJSDocSnippets'
+" Plug 'jordwalke/VimJSDocSnippets'
 Plug 'chrisgillis/vim-bootstrap3-snippets'
 
 " --- JavaScript ---
@@ -31,6 +31,8 @@ Plug 'jelera/vim-javascript-syntax'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'majutsushi/tagbar'
 Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
+Plug 'heavenshell/vim-jsdoc'
+Plug 'othree/jsdoc-syntax.vim'
 
 Plug 'posva/vim-vue'
 
@@ -61,6 +63,7 @@ Plug 'rakr/vim-one'
 Plug 'skreek/skeletor.vim'
 Plug 'tjammer/blayu.vim'
 Plug 'szorfein/fromthehell.vim'
+Plug 'junegunn/seoul256.vim'
 
 " Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-surround'
