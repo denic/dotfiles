@@ -367,8 +367,8 @@ else
     " let g:one_allow_italics = 1 " I love italic for comments
 
     set background=dark
-    let g:gruvbox_contrast_dark = 'soft'
-    let g:airline_theme='seoul256'
+    " let g:gruvbox_contrast_dark = 'soft'
+    " let g:airline_theme='seoul256'
     colorscheme seoul256 
 
     " set termguicolors
