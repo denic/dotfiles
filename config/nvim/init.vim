@@ -368,8 +368,8 @@ else
 
     set background=dark
     let g:gruvbox_contrast_dark = 'soft'
-    let g:airline_theme='gruvbox'
-    colorscheme gruvbox
+    let g:airline_theme='seoul256'
+    colorscheme seoul256 
 
     " set termguicolors
 endif
