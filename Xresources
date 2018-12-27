@@ -100,30 +100,22 @@ URxvt.fading:      40
 !Urxvt.font:-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
 !Urxvt.boldFont:-*-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
 
-URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:hinting=true
-URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:bold:hinting=true
-URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:italic:autohint=true:hinting=true
-URxvt*bolditalicFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:bold:italic:autohint=true:hinting=true
+URxvt*font: xft:Hack:pixelsize=12:antialias=true:hinting=true
+URxvt*boldFont: xft:Hack:pixelsize=12:antialias=true:bold:hinting=true
+URxvt*italicFont: xft:Hack:pixelsize=12:antialias=true:italic:autohint=true:hinting=true
+URxvt*bolditalicFont: xft:Hack:pixelsize=12:antialias=true:bold:italic:autohint=true:hinting=true
+
+!URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:hinting=true
+!URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:bold:hinting=true
+!URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:italic:autohint=true:hinting=true
+!URxvt*bolditalicFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:bold:italic:autohint=true:hinting=true
+
 xterm*font: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:hinting=true
 xterm*boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:bold:hinting=true
 xterm*italicFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:italic:autohint=true:hinting=true
 xterm*bolditalicFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true:bold:italic:autohint=true:hinting=true
 
-!Urxvt.font: xft:Terminus
-!Urxvt.boldFont: xft:Terminus
-
-!URxvt.font:\
-!    xft:Monospace:style=Roman:size=8:antialias=true,\
-!    xft:Osaka:style=Regular-Mono
-!URxvt.boldFont:\
-!    xft:Monospace:style=Bold,\
-!    xft:Osaka:style=Regular-Mono
-!URxvt.italicFont:\
-!    xft:Monospace:style=Oblique,\
-!    xft:Osaka:style=Regular-Mono
-!URxvt.boldItalicFont:\
-!    xft:Monospace:style=Bold Oblique,\
-!    xft:Osaka:style=Regular-Mono
+URxvt.letterSpace: -1
 
 URxvt.scrollBar:         false
 URxvt.scrollTtyOutput:   false
