@@ -10,7 +10,7 @@ xset fp rehash
 
 xrdb -load .Xresources
 
-# redshift &
+# redshift -l 51.44:7.73 &
 
 # xscreensaver
 if [ "$XDG_CURRENT_DESKTOP" != "KDE" ];
