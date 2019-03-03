@@ -9,10 +9,8 @@ Plug 'sclo/haproxy.vim'
 
 " --- Elixir-Lang ---
 Plug 'elixir-lang/vim-elixir'
-" Plug 'carlosgaldino/elixir-snippets'
 Plug 'slashmili/alchemist.vim'
 Plug 'thinca/vim-ref'
-" Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
 
 " --- Elm ---
 Plug 'elmcast/elm-vim'
