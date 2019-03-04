@@ -198,6 +198,18 @@ imap <c-s> <esc>:w<cr>a
 map <silent> <leader>n :NERDTreeToggle<CR>
 nmap <F11> :NERDTreeFind<CR>
 
+
+" CtrlP Funky
+" let g:ctrlp_funky_syntax_highlight = 1
+nnoremap <leader>f :CtrlPFunky<CR>
+
+" narrow the list down with a word under cursor
+nnoremap <silent> <Leader>, :CtrlPFunky<Cr>
+nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+
+nnoremap <leader>. :CtrlPTag<cr>
+nnoremap <leader>m :CtrlPMixed<cr>
+
 " TagBar
 nmap <F8> :TagbarToggle<CR>
 
