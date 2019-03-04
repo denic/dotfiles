@@ -21,17 +21,28 @@ Plug 'dkarter/bullets.vim'
 
 Plug 'IN3D/vim-raml'
 
-" --- React ---
+" --- ## JavaScript ---
+Plug 'pangloss/vim-javascript'
+Plug 'heavenshell/vim-jsdoc'
+Plug 'othree/jsdoc-syntax.vim'
+
+" --- ## React ---
 Plug 'mxw/vim-jsx'
 Plug 'justinj/vim-react-snippets'
 Plug 'cristianoliveira/vim-react-html-snippets'
 
-" --- git integration ---
+" --- ## Snippets ---
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+" Plug 'jordwalke/VimJSDocSnippets'
+Plug 'chrisgillis/vim-bootstrap3-snippets'
+"
+" --- ## git integration ---
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" --- Colorschemes ---
+" --- ## colorschemes ---
 Plug 'altercation/vim-colors-solarized'
 Plug 'chriskempson/base16-vim'
 Plug 'morhetz/gruvbox'
