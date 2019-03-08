@@ -26,6 +26,7 @@ Plug 'IN3D/vim-raml'
 Plug 'pangloss/vim-javascript'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'othree/jsdoc-syntax.vim'
+Plug 'heavenshell/vim-jsdoc'
 
 " --- ## React ---
 Plug 'mxw/vim-jsx'
@@ -201,6 +202,12 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+" Window resizing mappings
+map <up> <C-W>-
+map <down> <C-W>+
+map <left> <c-w><
+map <right> <c-w>>
 
 " save with strg-s
 map <c-s> <esc>:w<cr>
