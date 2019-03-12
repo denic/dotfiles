@@ -22,6 +22,9 @@ Plug 'dkarter/bullets.vim'
 
 Plug 'IN3D/vim-raml'
 
+" --- ## Elixir ---
+Plug 'elixir-editors/vim-elixir'
+
 " --- ## JavaScript ---
 Plug 'pangloss/vim-javascript'
 Plug 'heavenshell/vim-jsdoc'
