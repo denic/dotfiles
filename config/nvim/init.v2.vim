@@ -24,6 +24,7 @@ Plug 'IN3D/vim-raml'
 
 " --- ## Elixir ---
 Plug 'elixir-editors/vim-elixir'
+Plug 'slashmili/alchemist.vim'
 
 " --- ## JavaScript ---
 Plug 'pangloss/vim-javascript'
