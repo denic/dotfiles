@@ -3,8 +3,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 " --- # PLUGINS ---
 
 Plug 'junegunn/vim-easy-align'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'Raimondi/delimitMate'
+
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
