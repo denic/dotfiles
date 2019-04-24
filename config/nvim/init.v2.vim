@@ -7,8 +7,11 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'Raimondi/delimitMate'
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-" Plug 'itchyny/lightline.vim'
+
 Plug 'liuchengxu/eleline.vim'
+Plug 'vim-airline/vim-airline-themes'
+" Plug 'itchyny/lightline.vim'
+
 Plug 'tpope/vim-surround'
 Plug 'valloric/MatchTagAlways'
 Plug 'tpope/vim-commentary'
@@ -258,10 +261,14 @@ else
 
     " let g:one_allow_italics = 1 " I love italic for comments
 
-    set background=dark
-    let g:gruvbox_contrast_dark = 'soft'
-    " let g:airline_theme='seoul256'
-    colorscheme gruvbox 
+    set termguicolors
+    set background=light
 
-    " set termguicolors
+    " let g:gruvbox_contrast_dark = 'soft'
+
+	let g:lightline = { 'colorscheme': 'PaperColor' }
+    let g:airline_theme='papercolor'
+
+    colorscheme PaperColor 
+
 endif
