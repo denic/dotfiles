@@ -263,14 +263,14 @@ else
 
     " let g:one_allow_italics = 1 " I love italic for comments
 
-    set termguicolors
-    set background=light
+    " set termguicolors
+    set background=dark
 
-    " let g:gruvbox_contrast_dark = 'soft'
+    let g:gruvbox_contrast_dark = 'soft'
 
-	let g:lightline = { 'colorscheme': 'PaperColor' }
-    let g:airline_theme='papercolor'
+	let g:lightline = { 'colorscheme': 'gruvbox' }
+    let g:airline_theme='gruvbox'
 
-    colorscheme PaperColor 
+    colorscheme gruvbox 
 
 endif
