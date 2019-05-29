@@ -8,3 +8,7 @@ alias dcps='docker-compose ps'
 alias dcup='docker-compose up -d --build'
 alias dcem='docker exec -it $(docker ps | grep main | cut -d" " -f1) sh'
 alias docker-ips='for NODE in $(docker node ls --format '{{.Hostname}}'); do echo -e "${NODE} - $(docker node inspect --format '{{.Status.Addr}}' "${NODE}")"; done'
+
+cp='cp -i'
+mv='mv -i'
+
