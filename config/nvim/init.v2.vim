@@ -188,12 +188,17 @@ else
         " disable Background Color Erase (BCE) so that color schemes
         " render properly when inside 256-color tmux and GNU screen.
         " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
-        set t_ut=
+        " set t_ut=
     endif
 
     " let g:one_allow_italics = 1 " I love italic for comments
 
-    " set termguicolors
+    if exists('+termguicolors')
+        let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+        let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+        set termguicolors
+    endif
+
     set background=dark
 
     let g:gruvbox_contrast_dark = 'soft'
