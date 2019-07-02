@@ -4,6 +4,9 @@ source $VIMUSERRUNTIME/plugins.vim
 
 " --- # CONFIG ---
 
+" change the mapleader from \ to ,
+let mapleader=","
+
 let g:airline_powerline_fonts = 1
 
 set rnu
@@ -132,9 +135,6 @@ command! -nargs=? Fold :call CocAction('fold', <f-args>)
 
 " LOCAL-VIM-RC: Store and restore decisions only if the answer was given in upper case (Y/N/A).
 let g:localvimrc_persistent=1
-
-" change the mapleader from \ to ,
-let mapleader=","
 
 " Easy window navigation
 map <C-h> <C-w>h
