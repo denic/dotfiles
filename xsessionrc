@@ -17,3 +17,5 @@ if [ "$XDG_CURRENT_DESKTOP" != "KDE" ];
 then 
     xscreensaver -no-splash &
 fi
+
+export WINIT_HIDPI_FACTOR=1

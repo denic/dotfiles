@@ -1,5 +1,7 @@
 SSH_ENV="$HOME/.ssh/environment"
 
+export WINIT_HIDPI_FACTOR=1
+
 function start_agent {
     echo "Initialising new SSH agent..."
     /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
