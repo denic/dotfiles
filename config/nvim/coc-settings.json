@@ -1,0 +1,4 @@
+{
+    "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact"],
+    "eslint.options": {"configFile": "/home/db/src/oc/.eslintrc.json"}
+}
