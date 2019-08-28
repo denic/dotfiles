@@ -37,7 +37,7 @@ Plug 'heavenshell/vim-jsdoc'
 
 " --- ## Typescript ---
 Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+" Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 
 " --- ## React ---
 Plug 'mxw/vim-jsx'
