@@ -4,8 +4,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'Raimondi/delimitMate'
 
-Plug 'neoclide/coc.nvim', {'tag': 'release', 'do': { -> coc#util#install()}}
-" Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
@@ -38,7 +37,7 @@ Plug 'heavenshell/vim-jsdoc'
 
 " --- ## Typescript ---
 Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+" Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 
 " --- ## React ---
 Plug 'mxw/vim-jsx'
@@ -74,6 +73,7 @@ Plug 'skreek/skeletor.vim'
 Plug 'tjammer/blayu.vim'
 Plug 'szorfein/fromthehell.vim'
 Plug 'junegunn/seoul256.vim'
+Plug 'rakr/vim-two-firewatch'
 
 call plug#end()
 
