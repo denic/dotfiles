@@ -2,6 +2,5 @@
     "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact"],
     "eslint.options": {
         "configFile": "/home/db/src/oc/.eslintrc.js"
-    },
-    "coc.preferences.diagnostic.signOffset": 9999999
+    }
 }

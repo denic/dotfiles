@@ -73,6 +73,7 @@ Plug 'skreek/skeletor.vim'
 Plug 'tjammer/blayu.vim'
 Plug 'szorfein/fromthehell.vim'
 Plug 'junegunn/seoul256.vim'
+Plug 'rakr/vim-two-firewatch'
 
 call plug#end()
 
