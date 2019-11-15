@@ -34,6 +34,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'othree/jsdoc-syntax.vim'
 Plug 'heavenshell/vim-jsdoc'
+Plug 'maksimr/vim-jsbeautify'
 
 " --- ## Typescript ---
 Plug 'HerringtonDarkholme/yats.vim'
