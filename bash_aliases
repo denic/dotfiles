@@ -12,3 +12,4 @@ alias docker-ips='for NODE in $(docker node ls --format '{{.Hostname}}'); do ech
 cp='cp -i'
 mv='mv -i'
 
+alias gitls='git ls-tree -r --name-only HEAD | while read filename; do   echo "$(git log -1 --format="%ai" -- $filename) $filename"; done | sort'
