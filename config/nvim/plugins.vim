@@ -74,6 +74,8 @@ Plug 'tjammer/blayu.vim'
 Plug 'szorfein/fromthehell.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'rakr/vim-two-firewatch'
+Plug 'xero/blaquemagick.vim'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
