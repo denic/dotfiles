@@ -2,7 +2,7 @@ let $VIMUSERRUNTIME = fnamemodify($MYVIMRC, ':p:h')
 
 source $VIMUSERRUNTIME/plugins.vim
 
-" --- # CONFIG ---
+" --- MISC ---
 
 " change the mapleader from \ to ,
 let mapleader=","
@@ -132,6 +132,8 @@ command! -nargs=0 Format :call CocAction('format')
 " Use `:Fold` for fold current buffer
 command! -nargs=? Fold :call CocAction('fold', <f-args>)
 
+" --- END COC.VIM ---
+
 " LOCAL-VIM-RC: Store and restore decisions only if the answer was given in upper case (Y/N/A).
 let g:localvimrc_persistent=1
 
@@ -155,8 +157,8 @@ imap <c-s> <esc>:w<cr>a
 map <silent> <leader>n :NERDTreeToggle<CR>
 nmap <F11> :NERDTreeFind<CR>
 
+" --- CTRLP fUNKY ---
 
-" CtrlP Funky
 " let g:ctrlp_funky_syntax_highlight = 1
 nnoremap <leader>f :CtrlPFunky<CR>
 
@@ -166,6 +168,22 @@ nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 
 nnoremap <leader>. :CtrlPTag<cr>
 nnoremap <leader>m :CtrlPMixed<cr>
+
+
+" --- AG ---
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+
+  " bind \ to grep word under cursor
+  nnoremap \ :Ack "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+
 
 " TagBar
 nmap <F8> :TagbarToggle<CR>

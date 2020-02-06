@@ -7,10 +7,10 @@ Plug 'Raimondi/delimitMate'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'mileszs/ack.vim'
 
 Plug 'liuchengxu/eleline.vim'
 Plug 'vim-airline/vim-airline-themes'
-" Plug 'itchyny/lightline.vim'
 
 Plug 'tpope/vim-surround'
 Plug 'valloric/MatchTagAlways'
@@ -60,7 +60,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'chriskempson/base16-vim'
 Plug 'morhetz/gruvbox'
 Plug 'nanotech/jellybeans.vim'
-Plug 'rking/ag.vim'
 Plug 'sickill/vim-monokai'
 Plug 'vim-scripts/Relaxed-Green'
 Plug 'vim-scripts/blackdust.vim'
@@ -78,5 +77,4 @@ Plug 'xero/blaquemagick.vim'
 Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
-
 
