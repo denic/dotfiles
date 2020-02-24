@@ -183,6 +183,9 @@ hc keybind Mod4-p spawn mpc toggle
 # Pulseaudio control
 hc keybind Mod4-m spawn pulseaudio-ctl mute
 
+# Screenshot
+hc keybind Print spawn flameshot gui
+
 # run dunst with theme colours
 pkill dunst
 dunst

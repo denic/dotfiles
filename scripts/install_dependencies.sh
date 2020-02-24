@@ -8,7 +8,7 @@ sudo apt-get install build-essential arandr cmake dunst dzen2 exfat-utils \
     tig tmux xfonts-terminus fonts-powerline profanity pwgen nitrogen \
     python-pygments \
     help2man xclip autorandr sxiv \
-    alacritty
+    alacritty flameshot
 
 # Install neovim
 sudo apt-get install software-properties-common
