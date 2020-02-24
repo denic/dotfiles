@@ -154,6 +154,10 @@ export socks_proxy=''
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+# RUST BIN
+export PATH=$PATH:$HOME/.cargo/bin
+
+# YARN/JS PATH
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 export WINIT_HIDPI_FACTOR=1
@@ -164,3 +168,9 @@ export WINIT_HIDPI_FACTOR=1
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source /home/db/.config/broot/launcher/bash/br
+
+export PATH="$HOME/.dynamic-colors/bin:$PATH"
+
+export PATH="$HOME/src/misc/neovim-qt/build/bin:$PATH"
