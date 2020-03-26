@@ -5,6 +5,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'Raimondi/delimitMate'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'liuchengxu/vista.vim'
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'mileszs/ack.vim'
