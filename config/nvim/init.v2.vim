@@ -235,6 +235,13 @@ else
         let g:airline_theme='gruvbox'
 
         colorscheme gruvbox 
+
+        set title
+
+        augroup dirchange
+            autocmd!
+            autocmd DirChanged * let &titlestring=v:event['cwd']
+        augroup END
     endif
 
 endif
