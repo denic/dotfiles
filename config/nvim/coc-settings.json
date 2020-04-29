@@ -1,5 +1,6 @@
 {
     "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact"],
+    "eslint.packageManager": "npm",
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true
 }

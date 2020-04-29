@@ -124,13 +124,13 @@ if ! shopt -oq posix; then
 fi
 
 # git-prompt
-. ~/src/misc/git-prompt/gitprompt.sh
-
-# Set config variables first
-export GIT_PROMPT_ONLY_IN_REPO=1
+if [ -f "$HOME/src/misc/git-prompt/gitprompt.sh" ]; then
+    GIT_PROMPT_ONLY_IN_REPO=1
+    GIT_PROMPT_THEME=TruncatedPwd_WindowTitle_Ubuntu
+    source $HOME/src/misc/git-prompt/gitprompt.sh
+fi
 
 export PATH=$PATH:$HOME/.local/bin:$HOME/bin
-
 
 transfer() {
     if [ $# -eq 0 ]; then echo "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi
