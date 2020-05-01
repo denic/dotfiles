@@ -104,9 +104,11 @@ if [ -f ~/.bash_aliases_override ]; then
     . ~/.bash_aliases_override
 fi
 
+# Elixir 
 if [ -f ~/src/misc/elixir_auto_complete/all_elixir_auto_complete.bash ]; then
     source ~/src/misc/elixir_auto_complete/all_elixir_auto_complete.bash
 fi
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 if [ -f ~/src/misc/dotfiles/lib/git-flow-completion/git-flow-completion.bash ]; then
     source ~/src/misc/dotfiles/lib/git-flow-completion/git-flow-completion.bash
