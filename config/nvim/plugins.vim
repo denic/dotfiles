@@ -77,6 +77,7 @@ Plug 'junegunn/seoul256.vim'
 Plug 'rakr/vim-two-firewatch'
 Plug 'xero/blaquemagick.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
 

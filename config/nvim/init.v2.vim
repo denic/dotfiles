@@ -207,42 +207,46 @@ if exists('g:nyaovim_version')
 
 else
 
-    if has('gui_running')
-      set guioptions-=T  " no toolbar
-      set lines=60 columns=108 linespace=0
-      set guifont=DejaVu\ Sans\ Mono\ 10
-    else
-        if &term =~ '256color'
-            " disable Background Color Erase (BCE) so that color schemes
-            " render properly when inside 256-color tmux and GNU screen.
-            " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
-            " set t_ut=
-        endif
+    " if has('gui_running')
+    "   set guioptions-=T  " no toolbar
+    "   set lines=60 columns=108 linespace=0
+    "   set guifont=DejaVu\ Sans\ Mono\ 10
+    " else
+    "     if &term =~ '256color'
+    "         " disable Background Color Erase (BCE) so that color schemes
+    "         " render properly when inside 256-color tmux and GNU screen.
+    "         " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+    "         " set t_ut=
+    "     endif
 
-        " let g:one_allow_italics = 1 " I love italic for comments
+    "     " let g:one_allow_italics = 1 " I love italic for comments
 
-        if exists('+termguicolors')
-            let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-            let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-            set termguicolors
-        endif
+    "     if exists('+termguicolors')
+    "         let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    "         let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    "         set termguicolors
+    "     endif
 
-        set background=dark
+    "     set background=dark
 
-        let g:gruvbox_contrast_dark = 'soft'
+    "     let g:gruvbox_contrast_dark = 'soft'
 
-    	let g:lightline = { 'colorscheme': 'gruvbox' }
-        let g:airline_theme='gruvbox'
+    " 	let g:lightline = { 'colorscheme': 'gruvbox' }
+    "     let g:airline_theme='gruvbox'
 
-        colorscheme gruvbox 
+    "     colorscheme gruvbox 
 
-        set title
+    "     set title
 
-        augroup dirchange
-            autocmd!
-            autocmd DirChanged * let &titlestring=v:event['cwd']
-        augroup END
-    endif
+    "     augroup dirchange
+    "         autocmd!
+    "         autocmd DirChanged * let &titlestring=v:event['cwd']
+    "     augroup END
+    " endif
+
+    set termguicolors     " enable true colors support
+    let ayucolor="light"  " for light version of theme
+    colorscheme ayu
 
 endif
 
