@@ -587,62 +587,62 @@ key_bindings:
 # PaperColor Light 256 - alacritty color config
 # https://github.com/NLKNguyen/papercolor-theme
 # https://www.reddit.com/r/vim/comments/36xzbs/vim_paper_color_theme_inspired_by_googles/crqbfpa/
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0xeeeeee'
-#     foreground: '0x4d4d4c'
+colors:
+  # Default colors
+  primary:
+    background: '0xeeeeee'
+    foreground: '0x4d4d4c'
 
-#   # Colors the cursor will use if `custom_cursor_colors` is true
-#   cursor:
-#     text: '0xf3f3f3'
-#     cursor: '0x4d4d4c'
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0xf3f3f3'
+    cursor: '0x4d4d4c'
 
-#   # Normal colors
-#   normal:
-#     black:   '0xededed'
-#     red:     '0xd7005f'
-#     green:   '0x718c00'
-#     yellow:  '0xd75f00'
-#     blue:    '0x4271ae'
-#     magenta: '0x8959a8'
-#     cyan:    '0x3e999f'
-#     white:   '0x4d4d4c'
+  # Normal colors
+  normal:
+    black:   '0xededed'
+    red:     '0xd7005f'
+    green:   '0x718c00'
+    yellow:  '0xd75f00'
+    blue:    '0x4271ae'
+    magenta: '0x8959a8'
+    cyan:    '0x3e999f'
+    white:   '0x4d4d4c'
 
-#   # Bright colors
-#   bright:
-#     black:   '0x949494'
-#     red:     '0xd7005f'
-#     green:   '0x718c00'
-#     yellow:  '0xd75f00'
-#     blue:    '0x4271ae'
-#     magenta: '0x8959a8'
-#     cyan:    '0x3e999f'
-#     white:   '0xf5f5f5'
+  # Bright colors
+  bright:
+    black:   '0x949494'
+    red:     '0xd7005f'
+    green:   '0x718c00'
+    yellow:  '0xd75f00'
+    blue:    '0x4271ae'
+    magenta: '0x8959a8'
+    cyan:    '0x3e999f'
+    white:   '0xf5f5f5'
 
 # Colors (ayu_light)
-colors:
-  primary:
-    background: '0xfafafa'
-    foreground: '0x5c6773'
-  cursor:
-    text:   '0x5c6773'
-    cursor: '0xff6a00'
-  normal:
-    black:   '0x000000'
-    red:     '0xff3333'
-    green:   '0x86b300'
-    yellow:  '0xf29718'
-    blue:    '0x41a6d9'
-    magenta: '0xf07178'
-    cyan:    '0x4dbf99'
-    white:   '0xffffff'
-  bright:
-    black:   '0x323232'
-    red:     '0xff6565'
-    green:   '0xb8e532'
-    yellow:  '0xffc94a'
-    blue:    '0x73d8ff'
-    magenta: '0xffa3aa'
-    cyan:    '0x7ff1cb'
-    white:   '0xffffff'
+# colors:
+#   primary:
+#     background: '0xfafafa'
+#     foreground: '0x5c6773'
+#   cursor:
+#     text:   '0x5c6773'
+#     cursor: '0xff6a00'
+#   normal:
+#     black:   '0x000000'
+#     red:     '0xff3333'
+#     green:   '0x86b300'
+#     yellow:  '0xf29718'
+#     blue:    '0x41a6d9'
+#     magenta: '0xf07178'
+#     cyan:    '0x4dbf99'
+#     white:   '0xffffff'
+#   bright:
+#     black:   '0x323232'
+#     red:     '0xff6565'
+#     green:   '0xb8e532'
+#     yellow:  '0xffc94a'
+#     blue:    '0x73d8ff'
+#     magenta: '0xffa3aa'
+#     cyan:    '0x7ff1cb'
+#     white:   '0xffffff'

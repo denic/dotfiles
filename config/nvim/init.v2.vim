@@ -245,8 +245,11 @@ else
     " endif
 
     set termguicolors     " enable true colors support
-    let ayucolor="light"  " for light version of theme
-    colorscheme ayu
+    " let ayucolor="light"  " for light version of theme
+    " colorscheme ayu
+    
+    set bg=light
+    colorscheme PaperColor
 
 endif
 

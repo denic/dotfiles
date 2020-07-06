@@ -10,7 +10,8 @@ Plug 'liuchengxu/vista.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'mileszs/ack.vim'
 
-Plug 'liuchengxu/eleline.vim'
+" Plug 'liuchengxu/eleline.vim'
+Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 Plug 'tpope/vim-surround'
