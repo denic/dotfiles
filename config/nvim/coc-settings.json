@@ -1,4 +1,5 @@
 {
+    "elixir.pathToElixirLS": "~/src/misc/elixir-ls/release/language_server.sh",
     "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact"],
     "eslint.packageManager": "npm",
     "prettier.tabWidth": 4,
