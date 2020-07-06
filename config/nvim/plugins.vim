@@ -3,17 +3,13 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'junegunn/vim-easy-align'
 Plug 'Raimondi/delimitMate'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'liuchengxu/vista.vim'
-
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'mileszs/ack.vim'
-
-" Plug 'liuchengxu/eleline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
+Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-surround'
 Plug 'valloric/MatchTagAlways'
 Plug 'tpope/vim-commentary'
@@ -24,7 +20,6 @@ Plug 'neomake/neomake'
 Plug 'thinca/vim-localrc'
 Plug 'mklabs/mdn.vim'
 Plug 'dkarter/bullets.vim'
-
 Plug 'IN3D/vim-raml'
 
 " --- ## Elixir ---
