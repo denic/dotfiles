@@ -28,6 +28,7 @@ Plug 'IN3D/vim-raml'
 
 " --- ## Elixir ---
 Plug 'elixir-editors/vim-elixir'
+Plug 'mhinz/vim-mix-format'
 " Plug 'slashmili/alchemist.vim'
 " Plug 'amiralies/coc-elixir', {'do': 'yarn install --frozen-lockfile && yarn run build'}
 
