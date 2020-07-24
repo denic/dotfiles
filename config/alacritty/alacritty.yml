@@ -575,38 +575,81 @@ key_bindings:
 # PaperColor Light 256 - alacritty color config
 # https://github.com/NLKNguyen/papercolor-theme
 # https://www.reddit.com/r/vim/comments/36xzbs/vim_paper_color_theme_inspired_by_googles/crqbfpa/
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0xeeeeee'
+#     foreground: '0x4d4d4c'
+
+#   # Colors the cursor will use if `custom_cursor_colors` is true
+#   cursor:
+#     text: '0xf3f3f3'
+#     cursor: '0x4d4d4c'
+
+#   # Normal colors
+#   normal:
+#     black:   '0xededed'
+#     red:     '0xd7005f'
+#     green:   '0x718c00'
+#     yellow:  '0xd75f00'
+#     blue:    '0x4271ae'
+#     magenta: '0x8959a8'
+#     cyan:    '0x3e999f'
+#     white:   '0x4d4d4c'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x949494'
+#     red:     '0xd7005f'
+#     green:   '0x718c00'
+#     yellow:  '0xd75f00'
+#     blue:    '0x4271ae'
+#     magenta: '0x8959a8'
+#     cyan:    '0x3e999f'
+#     white:   '0xf5f5f5'
+
+# Base16 PaperColor Dark 256 - alacritty color config
+# Jon Leopard (http://github.com/jonleopard) based on PaperColor Theme (https://github.com/NLKNguyen/papercolor-theme)
 colors:
   # Default colors
   primary:
-    background: '0xeeeeee'
-    foreground: '0x4d4d4c'
+    background: '0x1c1c1c'
+    foreground: '0x808080'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0xf3f3f3'
-    cursor: '0x4d4d4c'
+    text: '0x1c1c1c'
+    cursor: '0x808080'
 
   # Normal colors
   normal:
-    black:   '0xededed'
-    red:     '0xd7005f'
-    green:   '0x718c00'
-    yellow:  '0xd75f00'
-    blue:    '0x4271ae'
-    magenta: '0x8959a8'
-    cyan:    '0x3e999f'
-    white:   '0x4d4d4c'
+    black:   '0x1c1c1c'
+    red:     '0x585858'
+    green:   '0xaf87d7'
+    yellow:  '0xafd700'
+    blue:    '0xff5faf'
+    magenta: '0x00afaf'
+    cyan:    '0xffaf00'
+    white:   '0x808080'
 
   # Bright colors
   bright:
-    black:   '0x949494'
-    red:     '0xd7005f'
-    green:   '0x718c00'
-    yellow:  '0xd75f00'
-    blue:    '0x4271ae'
-    magenta: '0x8959a8'
-    cyan:    '0x3e999f'
-    white:   '0xf5f5f5'
+    black:   '0xd7af5f'
+    red:     '0x585858'
+    green:   '0xaf87d7'
+    yellow:  '0xafd700'
+    blue:    '0xff5faf'
+    magenta: '0x00afaf'
+    cyan:    '0xffaf00'
+    white:   '0xd0d0d0'
+
+  indexed_colors:
+    - { index: 16, color: '0x5faf5f' }
+    - { index: 17, color: '0x5f8787' }
+    - { index: 18, color: '0xaf005f' }
+    - { index: 19, color: '0x5faf00' }
+    - { index: 20, color: '0x5fafd7' }
+    - { index: 21, color: '0xd7875f' }
 
 # Colors (ayu_light)
 # colors:

@@ -171,7 +171,7 @@ nnoremap <leader>m :CtrlPMixed<cr>
 
 
 " --- AG ---
-if executable('ag')
+if executable('ack')
   let g:ackprg = 'ag --vimgrep'
 
   " bind \ to grep word under cursor
@@ -185,16 +185,28 @@ if executable('ag')
 endif
 
 
-" TagBar
+" --- TagBar ---
 nmap <F8> :TagbarToggle<CR>
 
-" JSON format
+" --- JSON format ---
 command FormatJSON :%!python -mjson.tool
+
+" --- Mix Format ---
+let g:mix_format_on_save = 1
 
 augroup XML
     autocmd!
     autocmd FileType xml setlocal foldmethod=indent foldlevelstart=999 foldminlines=0
 augroup END
+
+" --- Vista ---
+
+" Set the executive for some filetypes explicitly. Use the explicit executive
+" instead of the default one for these filetypes when using `:Vista` without
+" specifying the executive.
+let g:vista_executive_for = {
+  \ 'elixir': 'vim_lsp'
+  \ }
 
 if exists('g:nyaovim_version')
 
@@ -248,7 +260,7 @@ else
     " let ayucolor="light"  " for light version of theme
     " colorscheme ayu
     
-    set bg=light
+    set bg=dark
     colorscheme PaperColor
 
 endif
