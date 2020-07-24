@@ -176,3 +176,5 @@ source /home/db/.config/broot/launcher/bash/br
 export PATH="$HOME/.dynamic-colors/bin:$PATH"
 
 export PATH="$HOME/src/misc/neovim-qt/build/bin:$PATH"
+
+exec fish
