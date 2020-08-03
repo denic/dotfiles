@@ -22,6 +22,11 @@ Plug 'mklabs/mdn.vim'
 Plug 'dkarter/bullets.vim'
 Plug 'IN3D/vim-raml'
 
+" --- # Code ---
+
+"  --- ## Testing ---
+Plug 'vim-test/vim-test'
+
 " --- ## Elixir ---
 Plug 'elixir-editors/vim-elixir'
 Plug 'mhinz/vim-mix-format'

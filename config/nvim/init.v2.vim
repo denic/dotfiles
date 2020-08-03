@@ -8,6 +8,7 @@ source $VIMUSERRUNTIME/plugins.vim
 let mapleader=","
 
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#branch#displayed_head_limit = 10
 
 set rnu
 
@@ -205,7 +206,7 @@ augroup END
 " instead of the default one for these filetypes when using `:Vista` without
 " specifying the executive.
 let g:vista_executive_for = {
-  \ 'elixir': 'vim_lsp'
+  \ 'elixir': 'coc'
   \ }
 
 if exists('g:nyaovim_version')
