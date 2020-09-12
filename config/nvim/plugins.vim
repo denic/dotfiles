@@ -81,5 +81,9 @@ Plug 'xero/blaquemagick.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'ayu-theme/ayu-vim'
 
+" ## Terraform
+Plug 'hashivim/vim-terraform'
+
+
 call plug#end()
 

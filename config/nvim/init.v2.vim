@@ -260,9 +260,12 @@ else
     set termguicolors     " enable true colors support
     " let ayucolor="light"  " for light version of theme
     " colorscheme ayu
+
+    set guicursor=n:blinkon1
+    set mouse=a
     
     set bg=dark
-    colorscheme PaperColor
+    colorscheme base16-tomorrow-night-eighties
 
 endif
 
