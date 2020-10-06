@@ -265,7 +265,7 @@ else
     set mouse=a
     
     set bg=dark
-    colorscheme base16-tomorrow-night-eighties
+    colorscheme base16-material
 
 endif
 
