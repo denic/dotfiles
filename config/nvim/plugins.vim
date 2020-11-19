@@ -48,6 +48,9 @@ Plug 'mxw/vim-jsx'
 Plug 'justinj/vim-react-snippets'
 Plug 'cristianoliveira/vim-react-html-snippets'
 
+" --- ## Dart ---
+Plug 'dart-lang/dart-vim-plugin'
+
 " --- ## Snippets ---
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -80,6 +83,7 @@ Plug 'rakr/vim-two-firewatch'
 Plug 'xero/blaquemagick.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'ayu-theme/ayu-vim'
+Plug 'ryuta69/elly.vim'
 
 " ## Terraform
 Plug 'hashivim/vim-terraform'

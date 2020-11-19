@@ -1,7 +1,10 @@
 {
     "elixir.pathToElixirLS": "~/src/misc/elixir-ls/release/language_server.sh",
-    "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact"],
-    "eslint.packageManager": "npm",
-    "prettier.tabWidth": 4,
-    "prettier.singleQuote": true
+    "languageserver": {
+    "terraform": {
+      "command": "terraform-lsp",
+      "filetypes": ["terraform"],
+      "initializationOptions": {}
+    }
+  }
 }

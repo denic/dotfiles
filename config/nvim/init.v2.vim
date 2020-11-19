@@ -264,8 +264,8 @@ else
     set guicursor=n:blinkon1
     set mouse=a
     
-    set bg=dark
-    colorscheme base16-material
+    set bg=light
+    colorscheme seoul256-light
 
 endif
 
