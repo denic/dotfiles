@@ -171,7 +171,7 @@ export WINIT_HIDPI_FACTOR=1
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source /home/db/.config/broot/launcher/bash/br
+# source /home/db/.config/broot/launcher/bash/br
 
 export PATH="$HOME/.dynamic-colors/bin:$PATH"
 
