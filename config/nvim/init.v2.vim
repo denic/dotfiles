@@ -160,6 +160,8 @@ nmap <F11> :NERDTreeFind<CR>
 
 " --- CTRLP fUNKY ---
 
+let g:ctrlp_funky_working_path_mode = 'r'
+
 " let g:ctrlp_funky_syntax_highlight = 1
 nnoremap <leader>f :CtrlPFunky<CR>
 
@@ -264,8 +266,14 @@ else
     set guicursor=n:blinkon1
     set mouse=a
     
-    set bg=light
-    colorscheme seoul256-light
+    set bg=dark
+    " colorscheme gruvbox
+    " colo nord
+    
+    " Embark colorscheme
+    colorscheme embark
+    let g:embark_terminal_italics = 1
+    g:airline_theme = 'embark'
 
 endif
 

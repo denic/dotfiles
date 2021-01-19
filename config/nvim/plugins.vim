@@ -75,7 +75,6 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'nightsense/simplifysimplify'
 Plug 'nightsense/wonka'
 Plug 'rakr/vim-one'
-Plug 'skreek/skeletor.vim'
 Plug 'tjammer/blayu.vim'
 Plug 'szorfein/fromthehell.vim'
 Plug 'junegunn/seoul256.vim'
@@ -84,6 +83,7 @@ Plug 'xero/blaquemagick.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'ryuta69/elly.vim'
+Plug 'embark-theme/vim', { 'as': 'embark' }
 
 " ## Terraform
 Plug 'hashivim/vim-terraform'
