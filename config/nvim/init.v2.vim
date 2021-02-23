@@ -16,7 +16,7 @@ set hlsearch
 set incsearch
 
 " highlight current line
-set cursorline
+" set cursorline
 
 set autoindent
 " set smartindent
@@ -105,10 +105,6 @@ function! s:show_documentation()
   endif
 endfunction
 
-" Highlight symbol under cursor on CursorHold
-augroup cocgroup
-	autocmd CursorHold * silent call CocActionAsync('highlight')
-augroup end
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
 " Remap for format selected region
@@ -273,7 +269,12 @@ else
     " Embark colorscheme
     colorscheme embark
     let g:embark_terminal_italics = 1
-    g:airline_theme = 'embark'
+    let g:airline_theme = 'embark'
+
+    " Highlight symbol under cursor on CursorHold
+    augroup cocgroup
+        autocmd CursorHold * silent call CocActionAsync('highlight')
+    augroup end
 
 endif
 
