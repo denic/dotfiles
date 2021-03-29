@@ -183,6 +183,11 @@ if executable('ack')
   let g:ctrlp_use_caching = 0
 endif
 
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " --- TagBar ---
 nmap <F8> :TagbarToggle<CR>
@@ -274,6 +279,7 @@ else
     " Highlight symbol under cursor on CursorHold
     augroup cocgroup
         autocmd CursorHold * silent call CocActionAsync('highlight')
+        highlight CocHighlightText guibg=#441c57
     augroup end
 
 endif

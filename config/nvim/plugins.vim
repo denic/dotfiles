@@ -21,6 +21,11 @@ Plug 'thinca/vim-localrc'
 Plug 'mklabs/mdn.vim'
 Plug 'dkarter/bullets.vim'
 Plug 'IN3D/vim-raml'
+Plug 'ojroques/nvim-bufdel', { 'branch': 'main' }
+
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " --- # Code ---
 
