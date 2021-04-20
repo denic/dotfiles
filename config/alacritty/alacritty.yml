@@ -419,6 +419,7 @@ key_bindings:
   - { key: NumpadSubtract, mods: Control,       action: DecreaseFontSize }
   - { key: Minus,          mods: Control,       action: DecreaseFontSize }
   # - { key: Return,   mods: Alt,           action: ToggleFullscreen }
+  - { key: N,              mods: Control|Shift, action: SpawnNewInstance }
 
   - { key: Paste,                   action: Paste                            }
   - { key: Copy,                    action: Copy                             }
