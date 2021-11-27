@@ -4,11 +4,11 @@ sudo add-apt-repository ppa:mmstick76/alacritty
 
 # Base setup
 sudo apt-get install build-essential arandr cmake dunst dzen2 exfat-utils \
-    git herbstluftwm  meld nmap redshift rxvt-unicode-256color suckless-tools rofi \
-    tig tmux xfonts-terminus fonts-powerline profanity pwgen nitrogen \
+    git meld nmap redshift rxvt-unicode-256color suckless-tools rofi \
+    tig tmux xfonts-terminus fonts-powerline pwgen nitrogen \
     python-pygments \
     help2man xclip autorandr sxiv \
-    alacritty flameshot
+    alacritty flameshot imagemagick scrot
 
 # Install neovim
 sudo apt-get install software-properties-common
