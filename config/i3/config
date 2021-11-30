@@ -28,6 +28,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 set $i3lockwall sh ~/.config/i3/scripts/lock.sh
 bindsym $mod+Ctrl+l exec --no-startup-id $i3lockwall
+bindsym mod4+l exec --no-startup-id $i3lockwall
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -40,7 +41,11 @@ exec --no-startup-id dunst
 exec --no-startup-id compton --inactive-dim 0.2 --focus-exclude 'class_g = "Rofi"'
 
 # Rofi
-bindsym $mod+q exec "rofi -modi window,drun,run -show drun -sidebar-mode -terminal konsole -location 2 -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
+bindsym $mod+q exec "rofi -modi window,drun,run -show window -sidebar-mode -terminal konsole -location 2 -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
+bindsym $mod+p exec "rofi -modi window,drun,run -show drun -sidebar-mode -terminal konsole -location 2 -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
+
+# Take a screenshot
+bindsym mod4+p exec flameshot gui
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -142,6 +147,11 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
+
+bindsym $mod+BackSpace focus output right
+# bindsym mod4+1 move workspace number $ws1 to output right 
+# bindsym mod4+2 move workspace [workspace="2"] to output current 
+# bindsym mod4+7 move workspace "7" to output current 
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
