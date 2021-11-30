@@ -149,9 +149,16 @@ bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
 bindsym $mod+BackSpace focus output right
-# bindsym mod4+1 move workspace number $ws1 to output right 
-# bindsym mod4+2 move workspace [workspace="2"] to output current 
-# bindsym mod4+7 move workspace "7" to output current 
+bindsym mod4+1 [workspace=$ws1] move workspace to output current; workspace number $ws1  
+bindsym mod4+2 [workspace=$ws2] move workspace to output current; workspace number $ws2
+bindsym mod4+3 [workspace=$ws3] move workspace to output current; workspace number $ws3
+bindsym mod4+4 [workspace=$ws4] move workspace to output current; workspace number $ws4
+bindsym mod4+5 [workspace=$ws5] move workspace to output current; workspace number $ws5
+bindsym mod4+6 [workspace=$ws6] move workspace to output current; workspace number $ws6
+bindsym mod4+7 [workspace=$ws7] move workspace to output current; workspace number $ws7
+bindsym mod4+8 [workspace=$ws8] move workspace to output current; workspace number $ws8
+bindsym mod4+9 [workspace=$ws9] move workspace to output current; workspace number $ws9
+bindsym mod4+0 [workspace=$ws10] move workspace to output current; workspace number $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
