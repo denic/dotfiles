@@ -139,6 +139,8 @@ transfer() {
     tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g'); curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile" >> $tmpfile; else curl --progress-bar --upload-file "-" "https://transfer.sh/$1" >> $tmpfile ; fi; cat $tmpfile; rm -f $tmpfile;
 }
 
+export LC_ALL=en_US.UTF-8
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH=${PATH}:~/Android/Sdk/platform-tools:~/Android/Sdk/tools
@@ -184,6 +186,4 @@ if [ -f '/home/db/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/home/db/
 if [ -f '/home/db/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/home/db/Downloads/google-cloud-sdk/completion.bash.inc'; fi
 
 exec fish
-
-# exec fish
 
