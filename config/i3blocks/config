@@ -1,0 +1,50 @@
+# vim:ft=cfg
+[time]
+command=date +%H:%M
+interval=60
+label= 
+
+[date]
+command=date-block
+interval=60
+label= 
+
+[battery]
+command=battery-block
+interval=30
+
+[keyboard]
+command=echo " $(xkblayout-state print %s)"
+interval=once
+label=
+signal=1
+
+# [memory]
+# command=free | awk '/^Mem/ {printf "%d%%",100*$3/$2}'
+# interval=5
+# label=
+
+# [cpu]
+# command=neofetch cpu_usage | cut -d' ' -f2
+# interval=5
+# label=
+
+[wifi]
+command=network-block
+interval=5
+align=center
+min_width=70
+
+# [brightness]
+# command=echo " $(xbacklight -get)%"
+# interval=once
+# signal=3
+# label=
+
+[volume]
+command=volume-block
+interval=once
+signal=2
+min_width=50
+align=center
+

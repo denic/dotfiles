@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+WIFI=wlp58s0
+ETHERNET=eno1
+
+if [[ "$(cat /sys/class/net/$ETHERNET/operstate)" = up ]]; then
+    echo " up"
+    exit
+fi
+
+if [[ "$(cat /sys/class/net/$WIFI/operstate)" = 'down' ]]; then
+    echo ' down'
+else
+    cat /proc/net/wireless | grep $WIFI | awk '{printf " %d%%\n",$3*100/70}'
+fi
+
+case $BLOCK_BUTTON in
+    1) notify-send "$(nmcli device | grep $WIFI | awk '{print $4}')" ;;
+esac
+

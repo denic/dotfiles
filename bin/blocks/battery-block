@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+level=$(acpi | egrep -o "[0-9]+%")
+level=${level%?}
+state=$(acpi | grep -o "Discharging")
+
+if [ -z "$state" ]; then
+    printf 
+else
+    case $level in
+        9[0-9]|100) printf ;;
+        8[0-9])     printf ;;
+        7[0-9])     printf ;;
+        6[0-9])     printf ;;
+        5[0-9])     printf ;;
+        4[0-9])     printf ;;
+        3[0-9])     printf ;;
+        2[0-9])     printf ;;
+        1[0-9])     printf ;;
+        *)          printf ;;
+    esac
+fi
+
+printf " %d%%\n" $level
+
+if [ $level -le 10 ] && [ -n "$state" ]; then
+    if [ ! -f /tmp/battery-low ]; then
+        touch /tmp/battery-low
+        notify-send -u critical "Battery running low: $level%"
+    fi
+    if [ $level -le 3 ]; then
+        systemctl suspend
+    fi
+elif [ -f /tmp/battery-low ]; then
+    rm /tmp/battery-low
+fi
+

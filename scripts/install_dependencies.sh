@@ -9,7 +9,7 @@ sudo apt-get install build-essential arandr cmake dzen2 exfat-utils \
     python-pygments \
     help2man xclip autorandr sxiv \
     alacritty flameshot imagemagick \
-    i3 scrot compton dunst rofi
+    i3 i3blocks kitty scrot compton dunst rofi
 
 # Install neovim
 sudo apt-get install software-properties-common
