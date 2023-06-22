@@ -45,11 +45,11 @@ exec --no-startup-id nm-tray
 exec --no-startup-id dunst
 
 # Compton
-exec --no-startup-id compton --inactive-dim 0.2 --focus-exclude 'class_g = "Rofi"'
+exec --no-startup-id picom --inactive-dim 0.2 --focus-exclude 'class_g = "Rofi"'
 
 # Rofi
-bindsym $mod+q exec "rofi -modi window,drun,run -show window -sidebar-mode -terminal kitty -location 2 -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
-bindsym $mod+p exec "rofi -modi window,drun,run -show drun -sidebar-mode -terminal kitty -location 2 -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
+bindsym $mod+q exec "rofi -modi window,drun,run -show window -show-icons -sidebar-mode -terminal kitty -location 2 -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
+bindsym $mod+p exec "rofi -modi window,drun,run -show drun -show-icons -sidebar-mode -terminal kitty -location 2 -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
 
 # Take a screenshot
 bindsym mod4+p exec flameshot gui
