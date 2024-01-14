@@ -1,5 +1,3 @@
 # My dotfiles
 
-## Dependencies
-
-See "scripts/install_dependencies.sh"
+Move to https://codeberg.org/kaputse/dotfiles
